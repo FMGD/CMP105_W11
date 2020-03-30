@@ -50,3 +50,13 @@ sf::FloatRect GameObject::getCollisionBox() {
 void GameObject::collisionResponse(GameObject * collider)
 {
 }
+
+SpriteType GameObject::getSpriteType()
+{
+	return sprite_type_;
+}
+
+void GameObject::setSpriteType(SType sprite_type)
+{
+	sprite_type_.setType(sprite_type);
+}

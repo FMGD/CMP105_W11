@@ -1,13 +1,13 @@
 #include "GameState.h"
 
 // Set the current state
-void GameState::setCurrentState(State s)
+void GameState::setCurrentState(GState s)
 {
 	currentState = s;
 }
 
 // Returns the current state.
-State GameState::getCurrentState()
+GState GameState::getCurrentState()
 {
 	return currentState;
 }

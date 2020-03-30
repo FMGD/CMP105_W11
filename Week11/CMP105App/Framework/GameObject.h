@@ -7,6 +7,7 @@
 #pragma once
 #include "SFML\Graphics.hpp"
 #include "Input.h"
+#include "..\SpriteType.h"
 
 class GameObject : public sf::RectangleShape
 {
@@ -38,6 +39,10 @@ public:
 	// Set the input component
 	void setInput(Input* in) { input = in; };
 
+	// Set the sprite type
+	SpriteType getSpriteType();
+	void setSpriteType(SType sprite_type);
+
 protected:
 	// Sprite properties
 	sf::Vector2f velocity;
@@ -49,4 +54,7 @@ protected:
 
 	// input component
 	Input* input;
+
+	// Sprite type
+	SpriteType sprite_type_;
 };

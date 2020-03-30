@@ -4,6 +4,8 @@
 #include "Framework/Input.h"
 #include "Framework/AudioManager.h"
 #include "Framework/GameState.h"
+#include "TileManager.h"
+#include "PlayerManager.h"
 #include <string>
 #include <iostream>
 
@@ -27,4 +29,12 @@ private:
 	Input* input;
 	GameState* gameState;
 	AudioManager* audio;
+
+	//	Managers
+	TileManager tile_manager_;
+	PlayerManager player_manager_;
+
+	// Text
+	sf::Font font_;
+	sf::Text text_info_;
 };
